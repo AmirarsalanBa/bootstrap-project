@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
 
@@ -43,257 +44,268 @@
         </header>
         
         <main>
-            <header class="page-header">
+            <header id="library-header" class="page-header">
                 <h1 class="m-4">Library</h1>
+                <p>Welcome to the Bootstrap Essentials Library. This page serves as a quick reference guide to the key classes and components in Bootstrap. From utility classes for layout and spacing to core components like buttons, alerts, and modals, you’ll find concise examples to help you use Bootstrap effectively in your projects. This guide is designed to make navigating Bootstrap’s features straightforward and efficient.</p>
             </header>
 
-            <div class="page-content">
-                <div class="container p-5 my-5 border">
+            <div id="library-page-content" class="page-content">
+              <!-- library contents -->
+              <section class="library-content">
+                  <!-- colors section -->
+                  <section class="container p-5 my-5 border">
 
-                    <h2>colors</h2>
-            
-                    <p class="h4">Bootstrap offers a variety of utility classes to apply colors to elements throughout your website. These color utilities help customize text, backgrounds, borders, and other elements, ensuring a consistent and flexible design.</p>
-                
-                    <button class="btn btn-primary mt-4" data-bs-toggle="collapse" data-bs-target="#colors">see more</button>
-            
-                    <div id="colors" class="collapse">
-                        <h2 class="my-2">color Styles</h2>
-                        <p class=" h4 my-4">Bootstrap 5 has some contextual classes that can be used to provide "meaning through colors".</p>
-                        <p>Use the contextual classes to provide "meaning through colors":</p>
-                        <p class="text-muted">This text is muted.</p>
-                        <p class="text-primary">This text is important.</p>
-                        <p class="text-success">This text indicates success.</p>
-                        <p class="text-info">This text represents some information.</p>
-                        <p class="text-warning">This text represents a warning.</p>
-                        <p class="text-danger">This text represents danger.</p>
-                        <p class="text-secondary">Secondary text.</p>
-                        <p class="text-dark">This text is dark grey.</p>
-                        <p class="text-body">Default body color (often black).</p>
-            
-                        <pre class="m-2"><code>
-                            &lt;p class=&quot;text-muted&quot;&gt;This text is muted.&lt;/p&gt;
-                            &lt;p class=&quot;text-primary&quot;&gt;This text is important.&lt;/p&gt;
-                            &lt;p class=&quot;text-success&quot;&gt;This text indicates success.&lt;/p&gt;
-                            &lt;p class=&quot;text-info&quot;&gt;This text represents some information.&lt;/p&gt;
-                            &lt;p class=&quot;text-warning&quot;&gt;This text represents a warning.&lt;/p&gt;
-                            &lt;p class=&quot;text-danger&quot;&gt;This text represents danger.&lt;/p&gt;
-                            &lt;p class=&quot;text-secondary&quot;&gt;Secondary text.&lt;/p&gt;
-                            &lt;p class=&quot;text-dark&quot;&gt;This text is dark grey.&lt;/p&gt;
-                            &lt;p class=&quot;text-body&quot;&gt;Default body color (often black).&lt;/p&gt;
-                        </code></pre>
-            
-                        <p class="h4 my-4">The classes for background colors are: .bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light.</p> 
-                            <div class="bg-primary p-3"></div>
-                            <div class="bg-success p-3"></div>
-                            <div class="bg-info p-3"></div>
-                            <div class="bg-warning p-3"></div>
-                            <div class="bg-danger p-3"></div>
-                            <div class="bg-secondary p-3"></div>
-                            <div class="bg-dark p-3"></div>
-                            <div class="bg-light p-3"></div>
-                        <pre class="m-2"><code>
-                            &lt;div class=&quot;bg-primary p-3&quot;&gt;&lt;/div&gt;
-                            &lt;div class=&quot;bg-success p-3&quot;&gt;&lt;/div&gt;
-                            &lt;div class=&quot;bg-info p-3&quot;&gt;&lt;/div&gt;
-                            &lt;div class=&quot;bg-warning p-3&quot;&gt;&lt;/div&gt;
-                            &lt;div class=&quot;bg-danger p-3&quot;&gt;&lt;/div&gt;
-                            &lt;div class=&quot;bg-secondary p-3&quot;&gt;&lt;/div&gt;
-                            &lt;div class=&quot;bg-dark p-3&quot;&gt;&lt;/div&gt;
-                            &lt;div class=&quot;bg-light p-3&quot;&gt;&lt;/div&gt;</code></pre>
-                        <button class="btn btn-danger mt-4" data-bs-toggle="collapse" data-bs-target="#colors">see less</button>
-                    </div>
-                </div>
-                <!-- buttons section -->
-                <div class="container p-5 my-5 border">
-            
-                    <h2>buttons</h2>
-            
-                    <p class="h4">Bootstrap buttons are highly customizable and provide a quick way to add user-friendly and consistent buttons throughout your website. By default, they use the .btn class to apply basic button styling and can be enhanced further with contextual classes to convey different meanings and styles.</p>
-            
-                    <button class="btn btn-primary mt-4" data-bs-toggle="collapse" data-bs-target="#buttons">see more</button>
-            
-                    <div id="buttons" class="collapse">
-                        <h2 class="my-2">Button Styles</h2>
-                        <p class=" h4 my-4">Bootstrap 5 provides different styles of buttons:</p>
-                        <button type="button" class="btn">Basic</button>
-                        <button type="button" class="btn btn-primary">Primary</button>
-                        <button type="button" class="btn btn-secondary">Secondary</button>
-                        <button type="button" class="btn btn-success">Success</button>
-                        <button type="button" class="btn btn-info">Info</button>
-                        <button type="button" class="btn btn-warning">Warning</button>
-                        <button type="button" class="btn btn-danger">Danger</button>
-                        <button type="button" class="btn btn-dark">Dark</button>
-                        <button type="button" class="btn btn-light">Light</button>
-                        <button type="button" class="btn btn-link">Link</button>  
-                        <pre class="m-2"><code>
-                            &lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Basic&lt;/button&gt;<br>
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;<br>
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;<br>
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;<br>
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;<br>
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;<br>
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;<br>
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;<br>
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-light&quot;&gt;Light&lt;/button&gt;<br>
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;
-                        </code></pre>
-                        <p class="h4 my-4">Bootstrap 5 also provides eight outline/bordered buttons.</p>
-                        <p class="h4 my-2"> the mouse over them to see an additional "hover" effect:</p>
-                        <button type="button" class="btn btn-outline-primary">Primary</button>
-                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                        <button type="button" class="btn btn-outline-success">Success</button>
-                        <button type="button" class="btn btn-outline-info">Info</button>
-                        <button type="button" class="btn btn-outline-warning">Warning</button>
-                        <button type="button" class="btn btn-outline-danger">Danger</button>
-                        <button type="button" class="btn btn-outline-dark">Dark</button>
-                        <button type="button" class="btn btn-outline-light text-dark">Light</button>
-                        <pre class="m-2"><code>
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot;&gt;Primary&lt;/button&gt;<br>
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;Secondary&lt;/button&gt;<br>
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-success&quot;&gt;Success&lt;/button&gt;<br>
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-info&quot;&gt;Info&lt;/button&gt;<br>
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-warning&quot;&gt;Warning&lt;/button&gt;<br>
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-danger&quot;&gt;Danger&lt;/button&gt;<br>
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;Dark&lt;/button&gt;<br>
-                            &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-light text-dark&quot;&gt;Light&lt;/button&gt;
-                        </code></pre>
-                        <section class="alert alert-info">The button classes can be used on &lt;a&gt;, &lt;button&gt;, or &lt;input&gt; elements.</section>
-                        <button class="btn btn-danger mt-4" data-bs-toggle="collapse" data-bs-target="#buttons">see less</button>
-                    </div>
-                </div>
-                <!-- alerts section -->
-                <div class="container p-5 my-5 border ">
-            
-                    <h2>alerts</h2>
-            
-                    <p class="h4">Bootstrap provides a flexible and customizable alert component that can be used to display important messages or feedback to users. Alerts are used to show success, warning, error, and informational messages. You can create alert boxes with different contextual classes, such as alert-success, alert-warning, alert-danger, and alert-info.</p>
-            
-                    <button class="btn btn-primary mt-4" data-bs-toggle="collapse" data-bs-target="#alerts">see more</button>
-            
-                    <div id="alerts" class="collapse">
-                        <h2 class="my-2">Alert styles</h2>
-                        <p class=" h4 my-4">Bootstrap 5 provides an easy way to create predefined alert messages:</p>
-                        <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
-                        <div class="alert alert-success">
-                            <strong>Success!</strong> This alert box could indicate a successful or positive action.
-                        </div>
-                        <div class="alert alert-info">
-                            <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
-                        </div>
-                        <div class="alert alert-warning">
-                            <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
-                        </div>
-                        <div class="alert alert-danger">
-                            <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
-                        </div>
-                        <div class="alert alert-primary">
-                            <strong>Primary!</strong> Indicates an important action.
-                        </div>
-                        <div class="alert alert-secondary">
-                            <strong>Secondary!</strong> Indicates a slightly less important action.
-                        </div>
-                        <div class="alert alert-dark">
-                            <strong>Dark!</strong> Dark grey alert.
-                        </div>
-                        <div class="alert alert-light">
-                            <strong>Light!</strong> Light grey alert.
-                        </div> 
-                        <pre class="m-2"><code>
-                            &lt;p&gt;Alerts are created with the .alert class, followed by a contextual color classes:&lt;/p&gt;
-                            &lt;div class=&quot;alert alert-success&quot;&gt;
-                              &lt;strong&gt;Success!&lt;/strong&gt; This alert box could indicate a successful or positive action.
-                            &lt;/div&gt;
-                            &lt;div class=&quot;alert alert-info&quot;&gt;
-                              &lt;strong&gt;Info!&lt;/strong&gt; This alert box could indicate a neutral informative change or action.
-                            &lt;/div&gt;
-                            &lt;div class=&quot;alert alert-warning&quot;&gt;
-                              &lt;strong&gt;Warning!&lt;/strong&gt; This alert box could indicate a warning that might need attention.
-                            &lt;/div&gt;
-                            &lt;div class=&quot;alert alert-danger&quot;&gt;
-                              &lt;strong&gt;Danger!&lt;/strong&gt; This alert box could indicate a dangerous or potentially negative action.
-                            &lt;/div&gt;
-                            &lt;div class=&quot;alert alert-primary&quot;&gt;
-                              &lt;strong&gt;Primary!&lt;/strong&gt; Indicates an important action.
-                            &lt;/div&gt;
-                            &lt;div class=&quot;alert alert-secondary&quot;&gt;
-                              &lt;strong&gt;Secondary!&lt;/strong&gt; Indicates a slightly less important action.
-                            &lt;/div&gt;
-                            &lt;div class=&quot;alert alert-dark&quot;&gt;
-                              &lt;strong&gt;Dark!&lt;/strong&gt; Dark grey alert.
-                            &lt;/div&gt;
-                            &lt;div class=&quot;alert alert-light&quot;&gt;
-                              &lt;strong&gt;Light!&lt;/strong&gt; Light grey alert.
-                            &lt;/div&gt;</code></pre>
-                        <p class="h4 my-4">The button with class="btn-close" and data-bs-dismiss="alert" is used to close the alert box.</p>
-                        <p class="h4 my-2">The alert-dismissible class aligns the button to the right. additional "hover" effect:</p>
-                        <div class="alert alert-success alert-dismissible">
-                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                            <strong>Success!</strong> This alert box could indicate a successful or positive action.
+                      <h2 class=" p-4 text-center border rounded bg-primary text-light">Colors</h2>
+              
+                      <p class="h4">Bootstrap offers a variety of utility classes to apply colors to elements throughout your website. These color utilities help customize text, backgrounds, borders, and other elements, ensuring a consistent and flexible design.</p>
+                  
+                      <button class="btn btn-success mt-4" data-bs-toggle="collapse" data-bs-target="#colors">see more</button>
+              
+                      <div id="colors" class="collapse">
+                          <h2 class="my-2">color Styles</h2>
+                          <p class=" h4 my-4">Bootstrap 5 has some contextual classes that can be used to provide "meaning through colors".</p>
+                          <p>Use the contextual classes to provide "meaning through colors":</p>
+                          <p class="text-muted">This text is muted.</p>
+                          <p class="text-primary">This text is important.</p>
+                          <p class="text-success">This text indicates success.</p>
+                          <p class="text-info">This text represents some information.</p>
+                          <p class="text-warning">This text represents a warning.</p>
+                          <p class="text-danger">This text represents danger.</p>
+                          <p class="text-secondary">Secondary text.</p>
+                          <p class="text-dark">This text is dark grey.</p>
+                          <p class="text-body">Default body color (often black).</p>
+              
+                          <pre class="m-2"><code>
+&lt;p class=&quot;text-muted&quot;&gt;This text is muted.&lt;/p&gt;
+&lt;p class=&quot;text-primary&quot;&gt;This text is important.&lt;/p&gt;
+&lt;p class=&quot;text-success&quot;&gt;This text indicates success.&lt;/p&gt;
+&lt;p class=&quot;text-info&quot;&gt;This text represents some information.&lt;/p&gt;
+&lt;p class=&quot;text-warning&quot;&gt;This text represents a warning.&lt;/p&gt;
+&lt;p class=&quot;text-danger&quot;&gt;This text represents danger.&lt;/p&gt;
+&lt;p class=&quot;text-secondary&quot;&gt;Secondary text.&lt;/p&gt;
+&lt;p class=&quot;text-dark&quot;&gt;This text is dark grey.&lt;/p&gt;
+&lt;p class=&quot;text-body&quot;&gt;Default body color (often black).&lt;/p&gt;
+                          </code></pre>
+              
+                          <p class="h4 my-4">The classes for background colors are: .bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-dark and .bg-light.</p> 
+                              <div class="bg-primary p-3"></div>
+                              <div class="bg-success p-3"></div>
+                              <div class="bg-info p-3"></div>
+                              <div class="bg-warning p-3"></div>
+                              <div class="bg-danger p-3"></div>
+                              <div class="bg-secondary p-3"></div>
+                              <div class="bg-dark p-3"></div>
+                              <div class="bg-light p-3"></div>
+                          <pre class="m-2"><code>
+&lt;div class=&quot;bg-primary p-3&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;bg-success p-3&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;bg-info p-3&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;bg-warning p-3&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;bg-danger p-3&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;bg-secondary p-3&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;bg-dark p-3&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;bg-light p-3&quot;&gt;&lt;/div&gt;</code></pre>
+                          <button class="btn btn-danger mt-4" data-bs-toggle="collapse" data-bs-target="#colors">see less</button>
+                      </div>
+                    </section>
+                  <!-- buttons section -->
+                  <section class="container p-5 my-5 border">
+              
+                      <h2 class=" p-4 text-center border rounded bg-primary text-light">Buttons</h2>
+              
+                      <p class="h4">Bootstrap buttons are highly customizable and provide a quick way to add user-friendly and consistent buttons throughout your website. By default, they use the .btn class to apply basic button styling and can be enhanced further with contextual classes to convey different meanings and styles.</p>
+              
+                      <button class="btn btn-success mt-4" data-bs-toggle="collapse" data-bs-target="#buttons">see more</button>
+              
+                      <div id="buttons" class="collapse">
+                          <h2 class="my-2">Button Styles</h2>
+                          <p class=" h4 my-4">Bootstrap 5 provides different styles of buttons:</p>
+                          <button type="button" class="btn">Basic</button>
+                          <button type="button" class="btn btn-primary">Primary</button>
+                          <button type="button" class="btn btn-secondary">Secondary</button>
+                          <button type="button" class="btn btn-success">Success</button>
+                          <button type="button" class="btn btn-info">Info</button>
+                          <button type="button" class="btn btn-warning">Warning</button>
+                          <button type="button" class="btn btn-danger">Danger</button>
+                          <button type="button" class="btn btn-dark">Dark</button>
+                          <button type="button" class="btn btn-light">Light</button>
+                          <button type="button" class="btn btn-link">Link</button>  
+                          <pre class="m-2"><code>
+&lt;button type=&quot;button&quot; class=&quot;btn&quot;&gt;Basic&lt;/button&gt;<br>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;<br>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Secondary&lt;/button&gt;<br>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;<br>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;<br>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;<br>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;<br>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;<br>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-light&quot;&gt;Light&lt;/button&gt;<br>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;
+                          </code></pre>
+                          <p class="h4 my-4">Bootstrap 5 also provides eight outline/bordered buttons.</p>
+                          <p class="h4 my-2"> the mouse over them to see an additional "hover" effect:</p>
+                          <button type="button" class="btn btn-outline-primary">Primary</button>
+                          <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                          <button type="button" class="btn btn-outline-success">Success</button>
+                          <button type="button" class="btn btn-outline-info">Info</button>
+                          <button type="button" class="btn btn-outline-warning">Warning</button>
+                          <button type="button" class="btn btn-outline-danger">Danger</button>
+                          <button type="button" class="btn btn-outline-dark">Dark</button>
+                          <button type="button" class="btn btn-outline-light text-dark">Light</button>
+                          <pre class="m-2"><code>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot;&gt;Primary&lt;/button&gt;<br>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;Secondary&lt;/button&gt;<br>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-success&quot;&gt;Success&lt;/button&gt;<br>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-info&quot;&gt;Info&lt;/button&gt;<br>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-warning&quot;&gt;Warning&lt;/button&gt;<br>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-danger&quot;&gt;Danger&lt;/button&gt;<br>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-dark&quot;&gt;Dark&lt;/button&gt;<br>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-light text-dark&quot;&gt;Light&lt;/button&gt;
+                          </code></pre>
+                          <section class="alert alert-info">The button classes can be used on &lt;a&gt;, &lt;button&gt;, or &lt;input&gt; elements.</section>
+                          <button class="btn btn-danger mt-4" data-bs-toggle="collapse" data-bs-target="#buttons">see less</button>
+                      </div>
+                  </section>
+                  <!-- alerts section -->
+                  <section class="container p-5 my-5 border ">
+              
+                      <h2 class="p-4 text-center border rounded bg-primary text-light">Alerts</h2>
+              
+                      <p class="h4">Bootstrap provides a flexible and customizable alert component that can be used to display important messages or feedback to users. Alerts are used to show success, warning, error, and informational messages. You can create alert boxes with different contextual classes, such as alert-success, alert-warning, alert-danger, and alert-info.</p>
+              
+                      <button class="btn btn-success mt-4" data-bs-toggle="collapse" data-bs-target="#alerts">see more</button>
+              
+                      <div id="alerts" class="collapse">
+                          <h2 class="my-2">Alert styles</h2>
+                          <p class=" h4 my-4">Bootstrap 5 provides an easy way to create predefined alert messages:</p>
+                          <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
+                          <div class="alert alert-success">
+                              <strong>Success!</strong> This alert box could indicate a successful or positive action.
                           </div>
-                          <div class="alert alert-info alert-dismissible">
-                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                            <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+                          <div class="alert alert-info">
+                              <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
                           </div>
-                          <div class="alert alert-warning alert-dismissible">
-                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                            <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+                          <div class="alert alert-warning">
+                              <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
                           </div>
-                          <div class="alert alert-danger alert-dismissible">
-                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                            <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+                          <div class="alert alert-danger">
+                              <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
                           </div>
-                          <div class="alert alert-primary alert-dismissible">
-                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                            <strong>Primary!</strong> Indicates an important action.
+                          <div class="alert alert-primary">
+                              <strong>Primary!</strong> Indicates an important action.
                           </div>
-                          <div class="alert alert-secondary alert-dismissible">
-                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                            <strong>Secondary!</strong> Indicates a slightly less important action.
+                          <div class="alert alert-secondary">
+                              <strong>Secondary!</strong> Indicates a slightly less important action.
                           </div>
-                          <div class="alert alert-dark alert-dismissible">
-                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                            <strong>Dark!</strong> Dark grey alert.
+                          <div class="alert alert-dark">
+                              <strong>Dark!</strong> Dark grey alert.
                           </div>
-                          <div class="alert alert-light alert-dismissible">
-                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                            <strong>Light!</strong> Light grey alert.
-                          </div>
-                        <pre class="m-2"><code>
-                            &lt;div class=&quot;alert alert-success alert-dismissible&quot;&gt;
-                            &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot;&gt;&lt;/button&gt;
-                            &lt;strong&gt;Success!&lt;/strong&gt; This alert box could indicate a successful or positive action.
-                          &lt;/div&gt;
-                          &lt;div class=&quot;alert alert-info alert-dismissible&quot;&gt;
-                            &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot;&gt;&lt;/button&gt;
-                            &lt;strong&gt;Info!&lt;/strong&gt; This alert box could indicate a neutral informative change or action.
-                          &lt;/div&gt;
-                          &lt;div class=&quot;alert alert-warning alert-dismissible&quot;&gt;
-                            &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot;&gt;&lt;/button&gt;
-                            &lt;strong&gt;Warning!&lt;/strong&gt; This alert box could indicate a warning that might need attention.
-                          &lt;/div&gt;
-                          &lt;div class=&quot;alert alert-danger alert-dismissible&quot;&gt;
-                            &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot;&gt;&lt;/button&gt;
-                            &lt;strong&gt;Danger!&lt;/strong&gt; This alert box could indicate a dangerous or potentially negative action.
-                          &lt;/div&gt;
-                          &lt;div class=&quot;alert alert-primary alert-dismissible&quot;&gt;
-                            &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot;&gt;&lt;/button&gt;
-                            &lt;strong&gt;Primary!&lt;/strong&gt; Indicates an important action.
-                          &lt;/div&gt;
-                          &lt;div class=&quot;alert alert-secondary alert-dismissible&quot;&gt;
-                            &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot;&gt;&lt;/button&gt;
-                            &lt;strong&gt;Secondary!&lt;/strong&gt; Indicates a slightly less important action.
-                          &lt;/div&gt;
-                          &lt;div class=&quot;alert alert-dark alert-dismissible&quot;&gt;
-                            &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot;&gt;&lt;/button&gt;
-                            &lt;strong&gt;Dark!&lt;/strong&gt; Dark grey alert.
-                          &lt;/div&gt;
-                          &lt;div class=&quot;alert alert-light alert-dismissible&quot;&gt;
-                            &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot;&gt;&lt;/button&gt;
-                            &lt;strong&gt;Light!&lt;/strong&gt; Light grey alert.
-                          &lt;/div&gt;</code></pre>
-                          <button class="btn btn-danger mt-4" data-bs-toggle="collapse" data-bs-target="#alerts">see less</button>
-            
-                    </div>
+                          <div class="alert alert-light">
+                              <strong>Light!</strong> Light grey alert.
+                          </div> 
+                          <pre class="m-2"><code>
+&lt;p&gt;Alerts are created with the .alert class, followed by a contextual color classes:&lt;/p&gt;
+&lt;div class=&quot;alert alert-success&quot;&gt;
+  &lt;strong&gt;Success!&lt;/strong&gt; This alert box could indicate a successful or positive action.
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-info&quot;&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; This alert box could indicate a neutral informative change or action.
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-warning&quot;&gt;
+  &lt;strong&gt;Warning!&lt;/strong&gt; This alert box could indicate a warning that might need attention.
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-danger&quot;&gt;
+  &lt;strong&gt;Danger!&lt;/strong&gt; This alert box could indicate a dangerous or potentially negative action.
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-primary&quot;&gt;
+  &lt;strong&gt;Primary!&lt;/strong&gt; Indicates an important action.
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-secondary&quot;&gt;
+  &lt;strong&gt;Secondary!&lt;/strong&gt; Indicates a slightly less important action.
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-dark&quot;&gt;
+  &lt;strong&gt;Dark!&lt;/strong&gt; Dark grey alert.
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-light&quot;&gt;
+  &lt;strong&gt;Light!&lt;/strong&gt; Light grey alert.
+&lt;/div&gt;
+                            </code></pre>
+                          <p class="h4 my-4">The button with class="btn-close" and data-bs-dismiss="alert" is used to close the alert box.</p>
+                          <p class="h4 my-2">The alert-dismissible class aligns the button to the right. additional "hover" effect:</p>
+                          <div class="alert alert-success alert-dismissible">
+                              <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                              <strong>Success!</strong> This alert box could indicate a successful or positive action.
+                            </div>
+                            <div class="alert alert-info alert-dismissible">
+                              <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                              <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+                            </div>
+                            <div class="alert alert-warning alert-dismissible">
+                              <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                              <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+                            </div>
+                            <div class="alert alert-danger alert-dismissible">
+                              <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                              <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+                            </div>
+                            <div class="alert alert-primary alert-dismissible">
+                              <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                              <strong>Primary!</strong> Indicates an important action.
+                            </div>
+                            <div class="alert alert-secondary alert-dismissible">
+                              <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                              <strong>Secondary!</strong> Indicates a slightly less important action.
+                            </div>
+                            <div class="alert alert-dark alert-dismissible">
+                              <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                              <strong>Dark!</strong> Dark grey alert.
+                            </div>
+                            <div class="alert alert-light alert-dismissible">
+                              <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                              <strong>Light!</strong> Light grey alert.
+                            </div>
+                          <pre class="m-2"><code>
+  &lt;div class=&quot;alert alert-success alert-dismissible&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot;&gt;&lt;/button&gt;
+  &lt;strong&gt;Success!&lt;/strong&gt; This alert box could indicate a successful or positive action.
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-info alert-dismissible&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot;&gt;&lt;/button&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; This alert box could indicate a neutral informative change or action.
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-warning alert-dismissible&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot;&gt;&lt;/button&gt;
+  &lt;strong&gt;Warning!&lt;/strong&gt; This alert box could indicate a warning that might need attention.
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-danger alert-dismissible&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot;&gt;&lt;/button&gt;
+  &lt;strong&gt;Danger!&lt;/strong&gt; This alert box could indicate a dangerous or potentially negative action.
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-primary alert-dismissible&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot;&gt;&lt;/button&gt;
+  &lt;strong&gt;Primary!&lt;/strong&gt; Indicates an important action.
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-secondary alert-dismissible&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot;&gt;&lt;/button&gt;
+  &lt;strong&gt;Secondary!&lt;/strong&gt; Indicates a slightly less important action.
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-dark alert-dismissible&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot;&gt;&lt;/button&gt;
+  &lt;strong&gt;Dark!&lt;/strong&gt; Dark grey alert.
+&lt;/div&gt;
+&lt;div class=&quot;alert alert-light alert-dismissible&quot;&gt;
+  &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot;&gt;&lt;/button&gt;
+  &lt;strong&gt;Light!&lt;/strong&gt; Light grey alert.
+&lt;/div&gt;
+                          </code></pre>
+                            <button class="btn btn-danger mt-4" data-bs-toggle="collapse" data-bs-target="#alerts">see less</button>
+              
+                  </section>
+              </section>
+                <!-- sidebar -->
+              <section class="library-sidebar">
+
+              </section>
             </div>
         </main>
         
