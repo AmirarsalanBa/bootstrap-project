@@ -75,11 +75,13 @@ a {
     padding: 1rem;
 }
 
-.what-is-bs h2 {
+.what-is-bs h2,
+.what-it-does h2 {
     margin-left: 5rem;
 }
 
-.what-is-bs p {
+.what-is-bs p,
+.what-it-does p {
     margin: 1rem auto 1rem 10rem;
 }
 
