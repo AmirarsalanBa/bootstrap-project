@@ -126,9 +126,8 @@ p {
     border: 5px black solid;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
     background-color: #f4f4f4;
-    
-    
 }
+
 
 .modal {
     text-transform: none;
