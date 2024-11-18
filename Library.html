@@ -479,7 +479,7 @@
               <!-- library contents -->
               <section class="library-content">
                   <!-- colors section -->
-                  <section class="container-fluid p-5 mb-5 border">
+                  <section class="container p-5 mb-5 border">
 
                       <h2 class=" p-4 text-center border rounded bg-primary text-light">Colors</h2>
               
@@ -630,7 +630,6 @@
                               <strong>Light!</strong> Light grey alert.
                           </div> 
                           <pre class="m-2"><code>
-&lt;p&gt;Alerts are created with the .alert class, followed by a contextual color classes:&lt;/p&gt;
 &lt;div class=&quot;alert alert-success&quot;&gt;
   &lt;strong&gt;Success!&lt;/strong&gt; This alert box could indicate a successful or positive action.
 &lt;/div&gt;
@@ -885,6 +884,97 @@
                       <button class="btn btn-danger mt-4" data-bs-toggle="collapse" data-bs-target="#images">see less</button>
                   </div>
               </section>
+
+              <!-- collapse section -->
+              <section class="container p-5 my-5 border">
+              
+                <h2 class=" p-4 text-center border rounded bg-primary text-light">Collapse</h2>
+        
+                <p class="h4">The Bootstrap Collapse component allows you to show and hide content with a smooth, collapsible transition. It can be used to create toggleable sections like FAQs, accordions, or navigation menus, helping to improve user experience by reducing clutter and making content more accessible only when needed. By combining collapse with buttons or links, you can easily control the visibility of elements on your webpage, creating dynamic, interactive user interfaces with minimal effort. Bootstrap’s built-in classes and attributes simplify the implementation, ensuring consistent and responsive design across devices.</p>
+        
+                <button class="btn btn-success mt-4" data-bs-toggle="collapse" data-bs-target="#collapse">see more</button>
+        
+                <div id="collapse" class="collapse">
+                    <h2 class="my-2">Collapsibles</h2>
+                    <p class=" h4 my-4 alert alert-info">Collapsibles are useful when you want to hide and show large amount of content:</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">click me</button>
+                    <div id="demo" class="collapse">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+
+                    <pre class="m-2"><code>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-bs-toggle=&quot;collapse&quot; data-bs-target=&quot;#demo&quot;&gt;click me&lt;/button&gt;
+&lt;div id=&quot;demo&quot; class=&quot;collapse&quot;&gt;
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+&lt;/div&gt;
+                    </code></pre>
+                    <p class="h4 my-4 alert alert-info">The .collapse class indicates a collapsible element; this is the content that will be shown or hidden with a click of a button.</p>
+                    <p class="h4 my-4 alert alert-info">To control (show/hide) the collapsible content, add the data-bs-toggle="collapse" attribute to an a or a button element. Then add the data-bs-target="#id" attribute to connect the button with the collapsible content.</p>
+
+                    <button class="btn btn-danger mt-4" data-bs-toggle="collapse" data-bs-target="#collapse">see less</button>
+                </div>
+            </section>
+
+            <!-- Cards section -->
+            <section class="container p-5 my-5 border">
+              
+              <h2 class=" p-4 text-center border rounded bg-primary text-light">Cards</h2>
+      
+              <p class="h4">Bootstrap provides a set of utilities for handling images in a responsive and flexible way. With simple classes, you can make images responsive, apply rounded corners, create circular images, or even add borders for a thumbnail effect. These built-in classes help you quickly style and position images without the need for custom CSS, making image management seamless in your layouts.</p>
+      
+              <button class="btn btn-success mt-4" data-bs-toggle="collapse" data-bs-target="#cards">see more</button>
+      
+              <div id="cards" class="collapse">
+                  <h2 class="my-2">Cards Styles</h2>
+                  <p class=" h4 my-4 alert alert-info">A card in Bootstrap 5 is a bordered box with some padding around its content. It includes options for headers, footers, content, colors, etc.</p>
+                  <p class="h4 my-4 alert alert-info">A basic card is created with the .card class, and content inside the card has a .card-body class:</p>
+                  <p class="h4 my-4 alert alert-info">The .card-header class adds a heading to the card and the .card-footer class adds a footer to the card:</p>
+
+                  <div class="container mt-3">
+                    <div class="card">
+                      <div class="card-header">Header</div>
+                      <div class="card-body">Content</div> 
+                      <div class="card-footer">Footer</div>
+                    </div>
+                  </div>
+
+                  <pre class="m-2"><code>
+&lt;div class=&quot;container mt-3&quot;&gt;
+  &lt;h2&gt;Card Header and Footer&lt;/h2&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+    &lt;div class=&quot;card-body&quot;&gt;Content&lt;/div&gt; 
+    &lt;div class=&quot;card-footer&quot;&gt;Footer&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                  </code></pre>
+                  <h2 class=" p-4 text-center border rounded bg-primary text-light">Image Cards</h2>
+                  <p class="h4 my-4 alert alert-info">Add .card-img-top or .card-img-bottom to an img element to place the image at the top or at the bottom inside the card. Note that we have added the image outside of the .card-body to span the entire width:</p>
+                  <div class="card" style="width:400px">
+                    <img class="card-img-top" src="media/walter-card.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">John Doe</h4>
+                      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                      <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+                  </div>
+                  <pre class="m-2"><code>
+&lt;div class=&quot;card&quot; style=&quot;width:400px&quot;&gt;
+  &lt;img class=&quot;card-img-top&quot; src=&quot;#&quot; alt=&quot;Card image&quot; style=&quot;width:100%&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h4 class=&quot;card-title&quot;&gt;John Doe&lt;/h4&gt;
+    &lt;p class=&quot;card-text&quot;&gt;Some example text some example text. John Doe is an architect and engineer&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;See Profile&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                  </code></pre>
+                  <button class="btn btn-danger mt-4" data-bs-toggle="collapse" data-bs-target="#cards">see less</button>
+              </div>
+          </section>
 
                   
               </section>
