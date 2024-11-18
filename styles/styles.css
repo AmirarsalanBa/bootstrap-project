@@ -13,6 +13,7 @@ body {
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.5;
+    text-transform: capitalize;
 }
 
 
@@ -93,6 +94,39 @@ a {
 }
 
 /* Library page */
+
+/* library header */
+
+#library-header {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    background-color: #f4f4f4;
+    padding: 2rem;
+
+}
+
+/* library main */
+
+#library-page-content {
+    padding: 0;
+}
+
+
+
+.library-sidebar {
+    background-color: #7330FA ;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.library-sidebar p {
+    margin: 0!important;
+    padding: 1rem 1rem;
+    text-align: left;
+}
+.library-tips-button {
+    position: absolute;
+    right: 1rem;
+}
+
 pre {
     background-color: #f5f5f5;
     padding: 0.2em 0.4em;
@@ -107,14 +141,78 @@ p {
 
 .container {
     border: 5px black solid;
-    border-radius: 3rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
     background-color: #f4f4f4;
+}
+
+
+.modal {
+    text-transform: none;
+}
+
+.library-images {
+    display: flex;
+    background-color: #7330FA;
+    padding: 2rem;
+    justify-content: center;
+}
+
+#images img {
+    width: 20%;
+    margin: 0 1rem;
+}
+
+
+.container h2 {
+    font-family: 'Poppins', sans-serif;
 }
 
 p {
     font-size: 1.25rem;
     line-height: 1.6;
+}
+
+.list-group button{
+    background-color: inherit;
+    color: white;
+}
+.library-sidebar
+.modal-footer,
+.modal-header,
+.modal-body {
+    background-color: #7330FA;
+
+}
+
+@media (min-width: 50em){
+    #library-page-content {
+        display: flex;
+        padding: 0;
+    }
+    .library-sidebar {
+        display: block;
+        width: 20%;
+        order: 1;
+    }
+    .library-content {
+        width: 80%;
+        order: 2;
+    }
+    .list-group {
+        display: block;
+    }
+    #list-group {
+        display: block; /* Initially hide the element */
+        height: auto;
+        overflow:auto;
+        opacity:inherit;
+        visibility:visible;
+    }
+    .library-tips-button {
+        display: none;
+    }
+
+
 }
 
 
