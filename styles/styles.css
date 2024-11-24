@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    font-family: "Rubik", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -56,13 +56,16 @@ a {
     list-style: none;
     padding: 1rem 2rem;
     margin: 0;
-    border-radius: 20px 0 0 20px;
 
     position: fixed;
     right: -100%;
     top: 4rem;
     bottom: 4rem;
     transition: right .5s ease;
+}
+
+#site-nav-list a {
+    color: #ffffff;
 }
 
 #site-nav-list.toggled {
