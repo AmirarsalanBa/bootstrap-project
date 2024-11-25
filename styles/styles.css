@@ -17,6 +17,14 @@ body {
 
 
 /* -------------------------------------------- */
+/* Layout */
+main {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+
+/* -------------------------------------------- */
 /* Elements */
 .bi {
     color: #fff;
@@ -64,11 +72,38 @@ a {
 }
 
 #site-nav-list a {
-    color: #ffffff;
+    color: #fff;
+}
+
+#site-nav-list a:hover {
+    color: #eae0fe;
 }
 
 #site-nav-list.toggled {
     right: 0;
+}
+
+@media (min-width: 50em) {
+    #site-nav-btn {
+        display: none;
+    }
+
+    #site-nav-list {
+        font-size: 1.2rem;
+        position: static;
+        background-color: transparent;
+        display: flex;
+        padding: 0;
+    }
+
+    #site-nav-list a {
+        padding: 1.2rem;
+    }
+
+    #site-nav-list a:hover {
+        background-color: #23186e;
+        color: #fff;
+    }
 }
 
 
@@ -224,7 +259,7 @@ p {
 /* Footer */
 .site-footer {
     background-color: #7330FA;
-    color: #EAE0FE;
+    color: #eae0fe;
     /* font-size: 1rem; */
     padding: 1rem;
 
