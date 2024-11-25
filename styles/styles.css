@@ -6,14 +6,21 @@ html {
 }
 
 body {
-    font-family: "Rubik", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.5;
-    text-transform: capitalize;
+}
+
+
+/* -------------------------------------------- */
+/* Layout */
+main {
+    max-width: 90rem;
+    margin: 0 auto;
 }
 
 
@@ -28,7 +35,7 @@ body {
 /* Links */
 a {
     text-decoration: none;
-    color: #fff;
+    color: #7330FA;
 }
 
 
@@ -56,7 +63,6 @@ a {
     list-style: none;
     padding: 1rem 2rem;
     margin: 0;
-    border-radius: 20px 0 0 20px;
 
     position: fixed;
     right: -100%;
@@ -65,8 +71,39 @@ a {
     transition: right .5s ease;
 }
 
+#site-nav-list a {
+    color: #fff;
+}
+
+#site-nav-list a:hover {
+    color: #eae0fe;
+}
+
 #site-nav-list.toggled {
     right: 0;
+}
+
+@media (min-width: 50em) {
+    #site-nav-btn {
+        display: none;
+    }
+
+    #site-nav-list {
+        font-size: 1.2rem;
+        position: static;
+        background-color: transparent;
+        display: flex;
+        padding: 0;
+    }
+
+    #site-nav-list a {
+        padding: 1.2rem;
+    }
+
+    #site-nav-list a:hover {
+        background-color: #23186e;
+        color: #fff;
+    }
 }
 
 
@@ -74,6 +111,24 @@ a {
 /* Main */
 .page-content {
     padding: 1rem;
+}
+
+@media(min-width:50em) {
+    .about h2,
+    .about h3 {
+        margin-left: 5rem;
+    }
+
+    .about p {
+        margin: 1rem auto 1rem 10rem;
+    }
+}
+
+.what-is-bs img {
+    width: 50rem;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 /* Library page */
@@ -204,7 +259,7 @@ p {
 /* Footer */
 .site-footer {
     background-color: #7330FA;
-    color: #EAE0FE;
+    color: #eae0fe;
     /* font-size: 1rem; */
     padding: 1rem;
 
