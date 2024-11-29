@@ -57,8 +57,9 @@ a {
     align-items: center;
 }
 
-.site-header .bi {
-    font-size: 2rem;
+.logo {
+    width: 50px;
+    height: auto;
 }
 
 #site-nav-list {
