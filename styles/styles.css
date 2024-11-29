@@ -249,6 +249,8 @@ a {
 .conclusion {
     text-align: center;
     font-style: italic;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* --------------------------------- */
