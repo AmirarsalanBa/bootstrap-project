@@ -18,9 +18,14 @@ body {
 
 /* -------------------------------------------- */
 /* Layout */
-main {
-    max-width: 90rem;
+body {
+    background-color: #1F1F1F;
+}
+
+.site-wrapper {
+    max-width: 120rem;
     margin: 0 auto;
+    background-color: #fff;
 }
 
 
@@ -57,7 +62,7 @@ a {
 }
 
 #site-nav-list {
-    background-color: #23186ed4;
+    background-color: #23186ef3;
     font-size: 1.5rem;
     line-height: 2;
     list-style: none;
@@ -77,6 +82,7 @@ a {
 
 #site-nav-list a:hover {
     color: #eae0fe;
+    transition: 0.3s ease-in-out;
 }
 
 #site-nav-list.toggled {
@@ -106,10 +112,27 @@ a {
     }
 }
 
+/* Footer */
+.site-footer {
+    background-color: #7330FA;
+    color: #eae0fe;
+    padding: 1rem;
+    text-align: center;
 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+/* -------------------------------------------- */
+/* Page specific */
 /* --------------------------------- */
-/* Main */
-
+/* Home */
 /* picture tag starts*/
 .home-cover img {
     display: block;
@@ -128,15 +151,26 @@ a {
 
 .main header {
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 .main header h1,
-.main header p {
+.main header h2 {
     margin: 0;
+    background-color: #2f097c;
+    color: #ffffff;
+    align-content: center;
+    padding: 1rem 1rem;
+}
+
+
+.main header h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-top: 0;
 }
 
 .page-container {
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -144,7 +178,7 @@ a {
 
 .col {
     border-radius: .5rem;
-    background-color: #846bae;
+    background-color: #8913FE;
     padding: 1rem 2rem;
     margin-bottom: 1rem;
     justify-items: center;
@@ -165,6 +199,12 @@ a {
     border-radius: .3rem;
 }
 
+.col a:hover {
+    color: #8913FE;
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
 .col p {
     color: #ffffff;
     text-align: center;
@@ -181,6 +221,8 @@ a {
         margin: 1rem
     }
 }
+
+/* --------------------------------- */
 /* bs-overview */
 .bs-overview {
     margin: 1rem;
@@ -208,6 +250,8 @@ a {
     text-align: center;
     font-style: italic;
 }
+
+/* --------------------------------- */
 /* Library page */
 
 /* library header */
@@ -215,7 +259,7 @@ a {
 #library-header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
     background-color: #f4f4f4;
-    padding: 2rem;
+    padding: 1rem 2rem 2rem;
     margin: 1rem 0;
 
 }
@@ -329,6 +373,8 @@ p {
 
 
 }
+
+/* --------------------------------- */
 /* SETUP PAGE */
 
 .setup-header {
@@ -341,24 +387,19 @@ p {
     border-bottom: 1px solid black;
 }
 
-
-
 /* --------------------------------- */
-/* Footer */
-.site-footer {
-    background-color: #7330FA;
-    color: #eae0fe;
-    /* font-size: 1rem; */
-    padding: 1rem;
+/* Credits */
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: .5rem;
+.credits-page {
+    padding: 2rem;
 }
 
-.site-footer p {
+.credits-page p {
+    padding: 0 1rem;
+    margin: 1rem;
+    word-break: break-all;
     margin: 0;
 }
 
-/* -------------------------------------------- */
+
+/* --------------------------------- */
