@@ -150,24 +150,18 @@ a {
 }
 /* picture tag ends */
 
-.main header {
+.main-page-header,
+.col {
     text-align: center;
 }
 
-.main header h1,
-.main header h2 {
+.main-page-header h1,
+.main-page-header p {
     margin: 0;
     background-color: #2f097c;
     color: #ffffff;
-    align-content: center;
-    padding: 1rem 1rem;
-}
-
-
-.main header h2 {
-    font-size: 1.2rem;
-    font-weight: 400;
-    padding-top: 0;
+    padding: 1rem;
+    border-bottom: #ffffff solid;
 }
 
 .page-container {
@@ -177,48 +171,40 @@ a {
     flex-direction: column;
 }
 
-.col {
+.col img {
     border-radius: .5rem;
-    background-color: #8913FE;
-    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.col {
     margin-bottom: 1rem;
     justify-items: center;
 }
 
-.icon-large {
-    font-size: 10rem;
-    border: .1rem solid #ffffff;
-    border-radius: 1rem;
-    padding: 0 1rem;
-}
-
 .col a {
     color: #ffffff;
-    text-align: center;
-    border: .08rem solid #ffffff;
-    padding: .5rem;
-    border-radius: .3rem;
+    background-color: #8913FE;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
 }
 
 .col a:hover {
     color: #8913FE;
-    background-color: #fff;
+    background-color: #eae0fe;
     transition: 0.3s ease-in-out;
 }
 
-.col p {
-    color: #ffffff;
-    text-align: center;
-}
-
 @media(min-width: 50em) {
+    .main-page-header p {
+        padding: .5rem 15rem 1rem;
+    }
     .page-container {
         flex-direction: row;
         justify-content: center;
     }
 
     .col {
-        max-width: 30rem;
+        max-width: 25rem;
         margin: 1rem
     }
 }
@@ -227,6 +213,34 @@ a {
 /* bs-overview */
 .bs-overview {
     margin: 1rem;
+}
+
+.about h2 {
+    border-bottom: #7330FA  solid;
+}
+
+.what-is-bs img {
+    width: 50rem;
+    display: block;
+    margin: auto auto; 
+}
+
+.contain p {
+    background-color: #e9e6faff;
+    padding: 2rem;
+    margin-bottom: 0;
+}
+
+.cons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.conclusion {
+    text-align: center;
+    font-style: italic;
+    margin: 2rem auto;
 }
 
 @media(min-width:50em) {
@@ -238,21 +252,12 @@ a {
     .about p {
         margin: 1rem auto 1rem 10rem;
     }
+
+    .overview {
+        margin-right: 5rem;
+    }
 }
 
-.what-is-bs img {
-    width: 50rem;
-    display: block;
-    margin-left: auto; 
-    margin-right: auto;
-}
-
-.conclusion {
-    text-align: center;
-    font-style: italic;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
 
 /* --------------------------------- */
 /* Library page */
@@ -411,14 +416,11 @@ p {
 /* Credits */
 
 .credits-page {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .credits-page p {
-    padding: 0 1rem;
     margin: 1rem;
-    word-break: break-all;
-    margin: 0;
 }
 
 
