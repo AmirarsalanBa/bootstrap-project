@@ -225,10 +225,24 @@ a {
     margin: auto auto; 
 }
 
-.contain p {
+.about ol,
+.about ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+.about ul li {
+    list-style-type: "— ";
+}
+
+.contain li {
     background-color: #e9e6faff;
     padding: 2rem;
-    margin-bottom: 0;
+    /* margin: 1rem; */
+}
+
+ul.contain li {
+    list-style-type: disc;
 }
 
 .cons {
@@ -249,7 +263,9 @@ a {
         margin-left: 5rem;
     }
 
-    .about p {
+    .about p,
+    .about li,
+    .contain li {
         margin: 1rem auto 1rem 10rem;
     }
 
