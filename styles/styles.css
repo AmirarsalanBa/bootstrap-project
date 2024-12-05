@@ -372,12 +372,15 @@ p {
     background-color: #7330FA ;
     color: white;
 }
-.library-sidebar
-.modal-footer,
-.modal-header,
-.modal-body {
-    background-color: #7330FA;
 
+.modal-footer,
+.modal-header {
+    color: #fff;
+    background-color: #7330FA;
+}
+
+.modal-body {
+    background-color: #fff;
 }
 
 @media (min-width: 50em){
