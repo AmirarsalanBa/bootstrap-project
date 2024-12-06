@@ -320,11 +320,14 @@ pre {
     color: white;
 }
 
-.library-sidebar
 .modal-footer,
-.modal-header,
-.modal-body {
+.modal-header {
+    color: #fff;
     background-color: #7330FA;
+}
+
+.modal-body {
+    background-color: #fff;
 }
 
 @media (min-width: 50em){
